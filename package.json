@@ -14,5 +14,8 @@
     "express": "^4.22.1",
     "json-server": "^0.17.4",
     "json-server-auth": "^2.1.0"
+  },
+  "engines": {
+  "node": "18.x"
   }
 }
