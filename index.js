@@ -1,6 +1,6 @@
-import express from "express";
-import jsonServer from "json-server";
-import auth from "json-server-auth";
+const express = require("express");
+const jsonServer = require("json-server");
+const auth = require("json-server-auth");
 
 const server = express();
 
@@ -31,7 +31,7 @@ const router = jsonServer.router("./data/db.json");
 server.db = router.db;
 server.use("/api", router);
 
-
+// Render port
 const PORT = process.env.PORT || 8000;
 server.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
